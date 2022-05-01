@@ -10,6 +10,7 @@ class MyDocument extends NextDocument {
     return (
       <Html lang="en">
         <Head />
+        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css"></link>
         <body>
           <Main />
           <NextScript />
