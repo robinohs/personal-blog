@@ -333,6 +333,16 @@ const Technology = () => (
           experience="1 year"
           href="https://www.atlassian.com/software/confluence"
         />
+        <CustomListItem
+          text="Git"
+          experience="1 year+"
+          href="https://git-scm.com/"
+        />
+        <CustomListItem
+          text="Continuous Integration"
+          experience="Basics"
+          href="#"
+        />
       </ItemList>
     </Box>
   </Section>
