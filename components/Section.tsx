@@ -1,7 +1,6 @@
 import { Box, Stack, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import React from "react";
-import { DarkTheme, LightTheme } from "../theme/theme";
 
 const Title = ({
   subtitle,
@@ -21,10 +20,7 @@ const Title = ({
           ? {
               content: '""',
               borderBottom: "1px solid",
-              borderColor:
-                theme.colorScheme === "dark"
-                  ? DarkTheme.DIVIDER_COLOR
-                  : LightTheme.DIVIDER_COLOR,
+              borderColor: theme.colorScheme === "dark" ? "#323232" : "#e0e0e0",
               flexGrow: 1,
               marginRight: 35,
             }
@@ -34,10 +30,7 @@ const Title = ({
           ? {
               content: '""',
               borderBottom: "1px solid",
-              borderColor:
-                theme.colorScheme === "dark"
-                  ? DarkTheme.DIVIDER_COLOR
-                  : LightTheme.DIVIDER_COLOR,
+              borderColor: theme.colorScheme === "dark" ? "#323232" : "#e0e0e0",
               flexGrow: 1,
               marginLeft: 35,
             }
@@ -47,10 +40,7 @@ const Title = ({
     <Text
       component={"h1"}
       sx={(theme) => ({
-        color:
-          theme.colorScheme === "dark"
-            ? DarkTheme.MAIN_COLOR
-            : LightTheme.MAIN_COLOR,
+        color: theme.colorScheme === "dark" ? "white" : "black",
         fontWeight: "700",
         fontSize: "35px",
       })}
@@ -63,8 +53,8 @@ const Title = ({
         sx={(theme) => ({
           color:
             theme.colorScheme === "dark"
-              ? DarkTheme.SECOND_COLOR
-              : LightTheme.SECOND_COLOR,
+              ? "rgba(255, 255, 255, 0.7)"
+              : "#595959",
           fontWeight: "light",
           fontSize: "20px",
         })}

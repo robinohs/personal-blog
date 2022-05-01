@@ -3,7 +3,6 @@ import { ChevronRightIcon } from "@modulz/radix-icons";
 import Layout from "components/Layout";
 import Section from "components/Section";
 import type { NextPage } from "next";
-import { DarkTheme, LightTheme } from "theme/theme";
 
 const PageLink = ({
   children,
@@ -44,8 +43,8 @@ const Intro = () => (
           },
           color:
             theme.colorScheme === "dark"
-              ? DarkTheme.SECOND_COLOR
-              : LightTheme.SECOND_COLOR,
+              ? theme.colors.gray[5]
+              : theme.colors.gray[5],
         })}
       >
         Hi. My name is Robin and I am currently doing my masters degree in
@@ -211,8 +210,8 @@ const CustomListItem = ({
             fontWeight: "bold",
             color:
               theme.colorScheme === "dark"
-                ? DarkTheme.MAIN_COLOR
-                : LightTheme.MAIN_COLOR,
+                ? theme.colors.gray[0]
+                : theme.colors.gray[5],
           })}
         >
           {text}
@@ -224,8 +223,8 @@ const CustomListItem = ({
             fontSize: "14px",
             color:
               theme.colorScheme === "dark"
-                ? DarkTheme.SECOND_COLOR
-                : LightTheme.SECOND_COLOR,
+                ? theme.colors.gray[5]
+                : theme.colors.gray[5],
           })}
         >
           {experience}
@@ -242,8 +241,8 @@ const Technology = () => (
         textAlign: "center",
         color:
           theme.colorScheme === "dark"
-            ? DarkTheme.SECOND_COLOR
-            : LightTheme.SECOND_COLOR,
+            ? theme.colors.gray[5]
+            : theme.colors.gray[5],
         "@media (min-width: 800px)": {
           textAlign: "left",
         },
@@ -261,8 +260,8 @@ const Technology = () => (
         flexDirection: "column",
         color:
           theme.colorScheme === "dark"
-            ? DarkTheme.MAIN_COLOR
-            : LightTheme.MAIN_COLOR,
+            ? theme.colors.gray[0]
+            : theme.colors.dark[6],
         gap: 25,
         "@media (min-width: 800px)": {
           flexDirection: "row",
@@ -372,8 +371,8 @@ const SocialButton = ({
         sx={(theme) => ({
           color:
             theme.colorScheme === "dark"
-              ? DarkTheme.SECOND_COLOR
-              : LightTheme.SECOND_COLOR,
+              ? theme.colors.gray[5]
+              : theme.colors.gray[5],
         })}
       >
         {name}
@@ -389,8 +388,8 @@ const ContactMe = () => (
         textAlign: "left",
         color:
           theme.colorScheme === "dark"
-            ? DarkTheme.SECOND_COLOR
-            : LightTheme.SECOND_COLOR,
+            ? theme.colors.gray[5]
+            : theme.colors.gray[5],
       })}
     >
       <Text
