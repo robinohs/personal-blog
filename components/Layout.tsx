@@ -21,14 +21,7 @@ const Layout = ({ enableBreadcrumb = false, title, children }: Props) => (
 
     <Stack
       sx={(theme) => ({
-        backgroundColor:
-          theme.colorScheme === "dark"
-            ? "#111212;"
-            : "#111212;",
-        color:
-          theme.colorScheme === "dark"
-            ? "white"
-            : "black",
+        backgroundColor: theme.colorScheme === "dark" ? "#111212;" : "#FBFBFB;",
         width: "100%",
         minHeight: "100vh",
       })}

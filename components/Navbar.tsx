@@ -28,8 +28,14 @@ const NavLink = ({ link }: { link: LinkType }) => (
       sx={(theme) => ({
         color:
           theme.colorScheme === "dark"
-            ? theme.colors.gray[0]
-            : theme.colors.dark[5],
+            ? theme.colors.gray[4]
+            : theme.colors.dark[4],
+        ":hover": {
+          backgroundColor:
+            theme.colorScheme === "dark"
+              ? theme.colors.dark[6]
+              : theme.colors.gray[2],
+        },
       })}
     >
       {link.name}

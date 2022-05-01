@@ -10,20 +10,16 @@ const ColorSchemeToggle = () => {
         onClick={() => toggleColorScheme()}
         size="xl"
         sx={(theme) => ({
-          backgroundColor:
-            colorScheme === "dark"
-              ? theme.colors.dark[6]
-              : theme.colors.gray[0],
-          ":hover": {
-            backgroundColor:
-              colorScheme === "dark"
-                ? theme.colors.dark[7]
-                : theme.colors.gray[1],
-          },
           color:
             theme.colorScheme === "dark"
-              ? theme.colors.yellow[4]
-              : theme.colors.blue[6],
+              ? theme.colors.gray[4]
+              : theme.colors.dark[4],
+          ":hover": {
+            backgroundColor:
+              theme.colorScheme === "dark"
+                ? theme.colors.dark[6]
+                : theme.colors.gray[2],
+          },
         })}
       >
         {colorScheme === "dark" ? (

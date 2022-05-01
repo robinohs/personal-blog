@@ -44,7 +44,7 @@ const Intro = () => (
           color:
             theme.colorScheme === "dark"
               ? theme.colors.gray[5]
-              : theme.colors.gray[5],
+              : theme.colors.gray[8],
         })}
       >
         Hi. My name is Robin and I am currently doing my masters degree in
@@ -199,7 +199,7 @@ const CustomListItem = ({
             color:
               theme.colorScheme === "dark"
                 ? theme.colors.blue[4]
-                : theme.colors.blue[2],
+                : theme.colors.blue[6],
           })}
         >
           <ChevronRightIcon />
@@ -211,7 +211,7 @@ const CustomListItem = ({
             color:
               theme.colorScheme === "dark"
                 ? theme.colors.gray[0]
-                : theme.colors.gray[5],
+                : theme.colors.gray[8],
           })}
         >
           {text}
@@ -224,7 +224,7 @@ const CustomListItem = ({
             color:
               theme.colorScheme === "dark"
                 ? theme.colors.gray[5]
-                : theme.colors.gray[5],
+                : theme.colors.gray[6],
           })}
         >
           {experience}
@@ -242,7 +242,7 @@ const Technology = () => (
         color:
           theme.colorScheme === "dark"
             ? theme.colors.gray[5]
-            : theme.colors.gray[5],
+            : theme.colors.gray[8],
         "@media (min-width: 800px)": {
           textAlign: "left",
         },
@@ -361,7 +361,7 @@ const SocialButton = ({
         backgroundColor:
           theme.colorScheme === "dark"
             ? theme.colors.gray[9]
-            : theme.colors.gray[0],
+            : theme.colors.gray[2],
       },
     })}
   >
@@ -372,7 +372,7 @@ const SocialButton = ({
           color:
             theme.colorScheme === "dark"
               ? theme.colors.gray[5]
-              : theme.colors.gray[5],
+              : theme.colors.gray[8],
         })}
       >
         {name}
@@ -389,7 +389,7 @@ const ContactMe = () => (
         color:
           theme.colorScheme === "dark"
             ? theme.colors.gray[5]
-            : theme.colors.gray[5],
+            : theme.colors.gray[8],
       })}
     >
       <Text

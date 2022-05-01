@@ -14,6 +14,7 @@ const Title = ({
   <Box
     sx={(theme) => ({
       display: "flex",
+      marginBottom: -25,
       alignItems: "center",
       ":before":
         float === "center" || float === "right"
@@ -40,7 +41,10 @@ const Title = ({
     <Text
       component={"h1"}
       sx={(theme) => ({
-        color: theme.colorScheme === "dark" ? "white" : "black",
+        color:
+          theme.colorScheme === "dark"
+            ? theme.colors.gray[2]
+            : theme.colors.dark[8],
         fontWeight: "700",
         fontSize: "35px",
       })}
@@ -53,8 +57,8 @@ const Title = ({
         sx={(theme) => ({
           color:
             theme.colorScheme === "dark"
-              ? "rgba(255, 255, 255, 0.7)"
-              : "#595959",
+              ? theme.colors.gray[4]
+              : theme.colors.dark[4],
           fontWeight: "light",
           fontSize: "20px",
         })}
