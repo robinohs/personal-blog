@@ -26,8 +26,8 @@ const Layout = ({ enableBreadcrumb = false, title, children }: Props) => (
         minHeight: "100vh",
       })}
     >
-      <Container sx={{ maxWidth: "48rem" }}>
-        <Stack>
+      <Container sx={{ maxWidth: "48rem", width: "100%" }}>
+        <Stack sx={{ width: "100%" }}>
           <Navbar />
           {enableBreadcrumb && <Breadcrumb />}
           <Box
@@ -35,6 +35,7 @@ const Layout = ({ enableBreadcrumb = false, title, children }: Props) => (
             sx={{
               flexGrow: 1,
               flexDirection: "column",
+              marginTop: "25px"
             }}
           >
             {children}
