@@ -50,7 +50,7 @@ const Navbar = () => {
     <Box
       component="nav"
       sx={{
-        padding: "15px 4px",
+        padding: "15px 0",
         width: "100%",
         transition: "all",
       }}

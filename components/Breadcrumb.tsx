@@ -1,5 +1,6 @@
+import { Breadcrumbs, UnstyledButton } from "@mantine/core";
+import { NextLink } from "@mantine/next";
 import { ChevronRightIcon } from "@modulz/radix-icons";
-import { Anchor, Breadcrumbs } from "@mantine/core";
 import { useRouter } from "next/router";
 import React, { useMemo } from "react";
 
@@ -31,11 +32,26 @@ const Breadcrumb = () => {
   }, [router]);
 
   return (
-    <Breadcrumbs separator={<ChevronRightIcon color="gray.500" />}>
+    <Breadcrumbs separator={<ChevronRightIcon />}>
       {items.map((item) => (
-        <Anchor key={item.name + item.url} href={item.url}>
-          {item.name}
-        </Anchor>
+        <NextLink key={item.name + item.url} href={item.url}>
+          <UnstyledButton
+            sx={(theme) => ({
+              color:
+                theme.colorScheme === "dark"
+                  ? theme.colors.gray[6]
+                  : theme.colors.dark[3],
+              ":hover": {
+                color:
+                  theme.colorScheme === "dark"
+                    ? theme.colors.gray[5]
+                    : theme.colors.dark[4],
+              },
+            })}
+          >
+            {item.name}
+          </UnstyledButton>
+        </NextLink>
       ))}
     </Breadcrumbs>
   );
