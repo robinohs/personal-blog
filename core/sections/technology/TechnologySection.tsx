@@ -1,6 +1,6 @@
 import { Anchor, Box, Text } from "@mantine/core";
 import { ChevronRightIcon } from "@modulz/radix-icons";
-import Section from "../../components/Section";
+import Section from "components/Section";
 
 const ItemList = ({
   label,
