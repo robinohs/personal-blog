@@ -1,19 +1,6 @@
-import { Anchor, Avatar, Box, Text } from "@mantine/core";
+import { Avatar, Box, Text } from "@mantine/core";
+import PageLink from "components/PageLink";
 import Section from "components/Section";
-
-const PageLink = ({
-  children,
-  to,
-  color,
-}: {
-  children?: React.ReactNode;
-  to: string;
-  color?: string;
-}) => (
-  <Anchor target={"_blank"} href={to}>
-    {children}
-  </Anchor>
-);
 
 const AboutMeSection = () => (
   <Section title={"About Me."}>
@@ -46,10 +33,7 @@ const AboutMeSection = () => (
       >
         Hi. My name is Robin and I am currently doing my masters degree in
         Computer Science at{" "}
-        <PageLink
-          color="blue.300"
-          to="https://www.uni-saarland.de/en/home.html"
-        >
+        <PageLink href="https://www.uni-saarland.de/en/home.html">
           Saarland University (Germany)
         </PageLink>{" "}
         which I will complete in early 2023.
@@ -57,10 +41,7 @@ const AboutMeSection = () => (
         <br />
         My passion is Web Development, Space technologies and Mobile
         Development. The bachelor program{" "}
-        <PageLink
-          color="blue.300"
-          to="https://www.uni-saarland.de/en/study/programmes/bachelor/cybersecurity.html"
-        >
+        <PageLink href="https://www.uni-saarland.de/en/study/programmes/bachelor/cybersecurity.html">
           Cybersecurity
         </PageLink>{" "}
         made me aware for secure and bug-free code, which is why I wrote my
@@ -74,14 +55,11 @@ const AboutMeSection = () => (
         <br />
         Using modern agile software development concepts, I gathered experience
         with Continuous Integration and tools like{" "}
-        <PageLink color="blue.300" to="https://www.atlassian.com/software/jira">
+        <PageLink href="https://www.atlassian.com/software/jira">
           Jira
         </PageLink>{" "}
         and{" "}
-        <PageLink
-          color="blue.300"
-          to="https://www.atlassian.com/software/confluence"
-        >
+        <PageLink href="https://www.atlassian.com/software/confluence">
           Confluence
         </PageLink>
         .
@@ -91,18 +69,10 @@ const AboutMeSection = () => (
         Dependable Systems and Software at Saarland University.
         <br />
         My task is to develop a Full-Stack Satellite Simulator using{" "}
-        <PageLink color="blue.300" to="https://reactjs.org/">
-          React
-        </PageLink>{" "}
-        and{" "}
-        <PageLink color="blue.300" to="https://spring.io/">
-          Spring Boot
-        </PageLink>{" "}
-        with{" "}
-        <PageLink color="blue.300" to="https://www.orekit.org/">
-          Orekit
-        </PageLink>{" "}
-        for space related computations.
+        <PageLink href="https://reactjs.org/">React</PageLink> and{" "}
+        <PageLink href="https://spring.io/">Spring Boot</PageLink> with{" "}
+        <PageLink href="https://www.orekit.org/">Orekit</PageLink> for space
+        related computations.
       </Text>
       <Avatar size={120} radius={"md"} src="/user.jpg" />
     </Box>
