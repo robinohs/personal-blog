@@ -1,7 +1,8 @@
 import Layout from "components/Layout";
 import { GearSection, TechnologySection } from "core/sections/technology";
+import type { NextPage } from "next";
 
-const Use = () => (
+const Use: NextPage = () => (
   <Layout title="Use" enableBreadcrumb>
     <TechnologySection />
     <GearSection />

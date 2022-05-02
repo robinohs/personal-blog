@@ -1,6 +1,7 @@
 import Layout from "components/Layout";
+import type { NextPage } from "next";
 
-const Legal = () => (
+const Legal: NextPage = () => (
   <Layout title="Legal" enableBreadcrumb>
     <h1>Disclaimer</h1>
     <p>Last updated: May 02, 2022</p>
