@@ -38,34 +38,22 @@ const Title = ({
           : {},
     })}
   >
-    <Text
-      component={"h1"}
-      sx={(theme) => ({
-        color:
-          theme.colorScheme === "dark"
-            ? theme.colors.gray[2]
-            : theme.colors.dark[8],
-        fontWeight: "700",
-        fontSize: "35px",
-      })}
-    >
-      {title}
-    </Text>
-    {subtitle && (
+    <Stack justify="center" align={float} sx={{ gap: 0, margin: "25px 0" }}>
       <Text
-        component={"h2"}
+        component={"h1"}
         sx={(theme) => ({
           color:
             theme.colorScheme === "dark"
-              ? theme.colors.gray[4]
-              : theme.colors.dark[4],
-          fontWeight: "light",
-          fontSize: "20px",
+              ? theme.colors.gray[2]
+              : theme.colors.dark[8],
+          fontWeight: "700",
+          fontSize: "35px",
+          margin: 0,
         })}
       >
-        {subtitle}
+        {title}
       </Text>
-    )}
+    </Stack>
   </Box>
 );
 
@@ -86,9 +74,25 @@ const Section = ({
     <Stack>
       <Title
         title={title}
-        float={float ?? isLarge ? "left" : "center"}
+        float={float ?? (isLarge ? "left" : "center")}
         subtitle={subtitle}
       />
+      {subtitle && (
+        <Text
+          sx={(theme) => ({
+            textAlign: "center",
+            color:
+              theme.colorScheme === "dark"
+                ? theme.colors.gray[5]
+                : theme.colors.gray[8],
+            "@media (min-width: 800px)": {
+              textAlign: "left",
+            },
+          })}
+        >
+          {subtitle}
+        </Text>
+      )}
       {children}
     </Stack>
   );

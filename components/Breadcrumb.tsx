@@ -3,33 +3,11 @@ import { NextLink } from "@mantine/next";
 import { ChevronRightIcon } from "@modulz/radix-icons";
 import { useRouter } from "next/router";
 import React, { useMemo } from "react";
-
-interface BreadcrumbItem {
-  url: string;
-  name: string;
-}
+import createBreadcrumb from "utils/createBreadcrumb";
 
 const Breadcrumb = () => {
   const router = useRouter();
-
-  const items = useMemo(() => {
-    const path = router.asPath.endsWith("#")
-      ? router.asPath.slice(0, -1)
-      : router.asPath;
-    const paths = path.split("/");
-    const items: BreadcrumbItem[] = paths.map((path, index) => {
-      return {
-        name:
-          path === "" ? "Home" : path.charAt(0).toUpperCase() + path.slice(1),
-        url: paths.reduce((old, curr, i) => {
-          if (i > index) return `${old}`;
-          if (old === "/") return `/${curr}`;
-          return `${old}/${curr}`;
-        }, "/"),
-      };
-    });
-    return items;
-  }, [router]);
+  const items = useMemo(() => createBreadcrumb(router.asPath), [router]);
 
   return (
     <Breadcrumbs separator={<ChevronRightIcon />}>

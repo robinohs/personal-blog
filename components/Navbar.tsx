@@ -17,6 +17,10 @@ const Links: LinkType[] = [
     name: "Home",
     to: "/",
   },
+  {
+    name: "Tech",
+    to: "/tech",
+  },
 ];
 
 const NavLink = ({ link }: { link: LinkType }) => (
@@ -30,6 +34,7 @@ const NavLink = ({ link }: { link: LinkType }) => (
           theme.colorScheme === "dark"
             ? theme.colors.gray[4]
             : theme.colors.dark[4],
+        marginLeft: "-18px",
         ":hover": {
           backgroundColor:
             theme.colorScheme === "dark"

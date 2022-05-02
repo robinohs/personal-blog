@@ -49,18 +49,18 @@ const Footer = () => (
   <footer>
     <Stack sx={{ marginTop: "4rem" }}>
       <Box
-        sx={(theme) => ({
+        sx={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-around",
           alignContent: "space-around",
           gap: 4,
-        })}
+        }}
       >
         <Stack align={"center"} spacing="xs">
           <ListHeader>Other links</ListHeader>
           <ListItem title="Home" href={"/"} />
-          <ListItem title="Uses" href={"/uses"} />
+          <ListItem title="Tech" href={"/tech"} />
           <ListItem title="Legal" href={"/legal"} />
         </Stack>
         <Stack align={"center"} spacing="xs">
