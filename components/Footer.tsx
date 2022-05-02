@@ -60,7 +60,7 @@ const Footer = () => (
         <Stack align={"center"} spacing="xs">
           <ListHeader>Other links</ListHeader>
           <ListItem title="Home" href={"/"} />
-          <ListItem title="Uses" href={"/uses"} />
+          <ListItem title="Use" href={"/use"} />
           <ListItem title="Legal" href={"/legal"} />
         </Stack>
         <Stack align={"center"} spacing="xs">

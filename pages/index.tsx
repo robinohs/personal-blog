@@ -454,7 +454,7 @@ const ContactMe = () => (
 );
 
 const Home: NextPage = () => (
-  <Layout title="Home">
+  <Layout title="Home" enableBreadcrumb>
     <Stack spacing={50}>
       <Intro />
       <Technology />
