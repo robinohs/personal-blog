@@ -35,7 +35,7 @@ const Layout = ({ enableBreadcrumb = false, title, children }: Props) => (
             sx={{
               flexGrow: 1,
               flexDirection: "column",
-              marginTop: "25px"
+              marginTop: "25px",
             }}
           >
             {children}
