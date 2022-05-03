@@ -21,6 +21,10 @@ const Links: LinkType[] = [
     name: "Tech",
     to: "/tech",
   },
+  {
+    name: "Blog",
+    to: "/blog",
+  },
 ];
 
 const NavLink = ({ link }: { link: LinkType }) => (
