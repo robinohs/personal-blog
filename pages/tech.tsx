@@ -1,4 +1,4 @@
-import Layout from "components/Layout";
+import Layout from "core/components/Layout";
 import { GearSection, TechnologySection } from "core/sections/technology";
 import type { NextPage } from "next";
 

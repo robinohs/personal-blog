@@ -1,5 +1,5 @@
 import { Stack } from "@mantine/core";
-import Layout from "components/Layout";
+import Layout from "core/components/Layout";
 import { AboutMeSection, ContactMeSection } from "core/sections/home";
 import type { NextPage } from "next";
 

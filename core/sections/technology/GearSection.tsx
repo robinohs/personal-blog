@@ -1,5 +1,5 @@
 import { List, Space, Text, Title } from "@mantine/core";
-import Section from "components/Section";
+import Section from "core/components/Section";
 
 const Subheading = ({ title }: { title: string }) => (
   <>
