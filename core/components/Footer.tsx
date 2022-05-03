@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 const ListHeader = ({ children }: { children: ReactNode }) => (
   <Text
     sx={(theme) => ({
-      fontWeight: "700",
+      fontWeight: "bold",
       color:
         theme.colorScheme === "dark"
           ? theme.colors.gray[5]
@@ -87,7 +87,7 @@ const Footer = () => (
       <Box sx={{ paddingBottom: "25px" }}>
         <Text
           sx={(theme) => ({
-            fontWeight: "light",
+            fontWeight: "lighter",
             textAlign: "center",
             marginTop: 45,
             color:
