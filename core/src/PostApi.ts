@@ -43,7 +43,7 @@ export const getPostFromSlug = (slug: string): Post => {
   return {
     meta: {
       title: data.title ?? slug,
-      date: (data.date ?? new Date()).toString(),
+      date: ((data.date as Date) ?? new Date()).toLocaleDateString("en-GB"),
       excerpt: data.excerpt ?? "",
       slug: slug,
       tags: (data.tags ?? []).sort(),

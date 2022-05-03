@@ -1,5 +1,6 @@
 import {
   Badge,
+  Grid,
   Group,
   Stack,
   Text,
@@ -33,11 +34,18 @@ const ArticleItem = ({ post }: Props) => (
       >
         <Title order={2}>{post.title}</Title>
         <Text color="dimmed">{post.excerpt}</Text>
-        <Group>
-          {post.tags.map((tag) => (
-            <Badge key={tag}>{tag}</Badge>
-          ))}
-        </Group>
+        <Grid>
+          <Grid.Col span={8} xs={9} md={8}>
+            <Group>
+              {post.tags.map((tag) => (
+                <Badge key={tag}>{tag}</Badge>
+              ))}
+            </Group>
+          </Grid.Col>
+          <Grid.Col span={4} xs={3} md={4}>
+            <Text sx={{ textAlign: "end" }}>{post.date}</Text>
+          </Grid.Col>
+        </Grid>
       </Stack>
     </UnstyledButton>
   </NextLink>
