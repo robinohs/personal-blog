@@ -1,4 +1,5 @@
 import { Space, Title, TypographyStylesProvider } from "@mantine/core";
+import ArticleImage from "core/components/ArticleImage";
 import Layout from "core/components/Layout";
 import YouTube from "core/components/YouTube";
 import { getPostFromSlug, getSlugs } from "core/src/PostApi";
@@ -6,7 +7,6 @@ import "highlight.js/styles/atom-one-dark.css";
 import type { GetStaticPaths, GetStaticProps } from "next";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import Image from "next/image";
 import rehypeAutoLinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
 import rehypeSlug from "rehype-slug";
@@ -23,7 +23,7 @@ const BlogDetailPage = ({ source, meta }: PostMDX) => {
       <Title order={1}>{meta.title}</Title>
       <Space h="lg" />
       <TypographyStylesProvider>
-        <MDXRemote {...source} components={{ YouTube, Image }} />
+        <MDXRemote {...source} components={{ YouTube, ArticleImage }} />
       </TypographyStylesProvider>
     </Layout>
   );
