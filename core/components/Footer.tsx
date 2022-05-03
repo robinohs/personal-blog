@@ -86,15 +86,12 @@ const Footer = () => (
       </Box>
       <Box sx={{ paddingBottom: "25px" }}>
         <Text
-          sx={(theme) => ({
-            fontWeight: "lighter",
+          color="dimmed"
+          sx={{
+            fontWeight: 300,
             textAlign: "center",
             marginTop: 45,
-            color:
-              theme.colorScheme === "dark"
-                ? theme.colors.gray[7]
-                : theme.colors.dark[4],
-          })}
+          }}
         >
           Copyright © 2022 Robin Ohs
         </Text>

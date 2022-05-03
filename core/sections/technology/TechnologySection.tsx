@@ -1,5 +1,5 @@
 import { Anchor, Box, Text } from "@mantine/core";
-import { ChevronRightIcon } from "@modulz/radix-icons";
+import { DotFilledIcon } from "@modulz/radix-icons";
 import Section from "core/components/Section";
 
 const ItemList = ({
@@ -94,7 +94,7 @@ const CustomListItem = ({
                 : theme.colors.blue[6],
           })}
         >
-          <ChevronRightIcon />
+          <DotFilledIcon />
         </Text>
         <Text
           sx={(theme) => ({
