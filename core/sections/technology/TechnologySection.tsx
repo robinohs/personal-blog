@@ -23,7 +23,7 @@ const ItemList = ({
       sx={{
         width: "100%",
         textAlign: "center",
-        fontWeight: "300",
+        fontWeight: 400,
         fontSize: "25px",
         paddingBottom: 2,
         "@media (min-width: 800px)": {
@@ -99,7 +99,7 @@ const CustomListItem = ({
         <Text
           sx={(theme) => ({
             width: "110px",
-            fontWeight: "bold",
+            fontWeight: 500,
             color:
               theme.colorScheme === "dark"
                 ? theme.colors.gray[0]
@@ -111,7 +111,7 @@ const CustomListItem = ({
         <Text
           sx={(theme) => ({
             width: "80px",
-            fontWeight: "light",
+            fontWeight: 300,
             fontSize: "14px",
             color:
               theme.colorScheme === "dark"
