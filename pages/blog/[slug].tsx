@@ -1,4 +1,4 @@
-import { Title, TypographyStylesProvider } from "@mantine/core";
+import { Space, Title, TypographyStylesProvider } from "@mantine/core";
 import Layout from "core/components/Layout";
 import YouTube from "core/components/YouTube";
 import { getPostFromSlug, getSlugs } from "core/src/PostApi";
@@ -21,6 +21,7 @@ const BlogDetailPage = ({ source, meta }: PostMDX) => {
   return (
     <Layout title={meta.title} enableBreadcrumb>
       <Title order={1}>{meta.title}</Title>
+      <Space h="lg" />
       <TypographyStylesProvider>
         <MDXRemote {...source} components={{ YouTube, Image }} />
       </TypographyStylesProvider>
