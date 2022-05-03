@@ -11,11 +11,12 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
-    "@mantine/core": "^4.2.1",
-    "@mantine/hooks": "^4.2.1",
-    "@mantine/next": "^4.2.1",
+    "@mantine/core": "^4.2.2",
+    "@mantine/hooks": "^4.2.2",
+    "@mantine/next": "^4.2.2",
     "@modulz/radix-icons": "^4.0.0",
     "bootstrap-icons": "^1.8.1",
+    "fuse.js": "^6.6.0",
     "glob": "^8.0.1",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.5.1",
