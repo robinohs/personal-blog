@@ -41,7 +41,7 @@ const ArticleItem = ({ post, views }: Props) => (
             <Text
               color="dimmed"
               sx={{ textAlign: "end" }}
-            >{`${views?.views.toString()} views`}</Text>
+            >{`${views?.views.toString() ?? "---"} views`}</Text>
           </Grid.Col>
         </Grid>
         <Text color="dimmed">{post.excerpt}</Text>
