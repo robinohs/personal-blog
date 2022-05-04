@@ -27,7 +27,7 @@ const handleGet = async (res: NextApiResponse) => {
 
 const handlePost = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const { slug } = req.body;
+    const { slug } = JSON.parse(req.body);
     if (!slug || !getSlugs().includes(slug))
       return res.status(400).json({ message: `Slug '${slug}' was not found.` });
 
