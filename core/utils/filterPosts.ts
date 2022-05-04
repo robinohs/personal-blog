@@ -1,5 +1,5 @@
 import Fuse from "fuse.js";
-import { PostMetaData } from "core/types/Post.type";
+import type { PostMetaData } from "@type/Post.type";
 
 const filterPosts = (query: string, posts: PostMetaData[]) => {
   if (query === "") return posts;

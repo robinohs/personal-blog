@@ -1,9 +1,9 @@
 import { Breadcrumbs, UnstyledButton } from "@mantine/core";
 import { NextLink } from "@mantine/next";
 import { ChevronRightIcon } from "@modulz/radix-icons";
+import createBreadcrumb from "@util/createBreadcrumb";
 import { useRouter } from "next/router";
-import React, { useMemo } from "react";
-import createBreadcrumb from "core/utils/createBreadcrumb";
+import { useMemo } from "react";
 
 const Breadcrumb = () => {
   const router = useRouter();

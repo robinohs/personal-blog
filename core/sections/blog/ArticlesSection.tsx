@@ -1,11 +1,11 @@
 import { Text } from "@mantine/core";
+import type { PostMetaData } from "@type/Post.type";
+import filterPosts from "@util/filterPosts";
 import ArticleItem from "core/components/ArticleItem";
 import PaginatedList from "core/components/PaginatedList";
 import SearchBar from "core/components/SearchBar";
 import Section from "core/components/Section";
 import { useEffect, useState } from "react";
-import { PostMetaData } from "core/types/Post.type";
-import filterPosts from "core/utils/filterPosts";
 
 const ARTICLES_PER_PAGE = 20;
 

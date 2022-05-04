@@ -1,4 +1,4 @@
-import BreadcrumbItem from "core/types/BreadcrumbItem.type";
+import type BreadcrumbItem from "@type/BreadcrumbItem.type";
 
 /**
  * Takes a raw path and creates an array of BreadcrumbItems for it.

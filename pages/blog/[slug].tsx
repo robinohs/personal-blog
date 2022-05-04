@@ -1,4 +1,5 @@
 import { Space, Title, TypographyStylesProvider } from "@mantine/core";
+import type { PostMetaData } from "@type/Post.type";
 import ArticleImage from "core/components/ArticleImage";
 import Layout from "core/components/Layout";
 import YouTube from "core/components/YouTube";
@@ -10,7 +11,6 @@ import { serialize } from "next-mdx-remote/serialize";
 import rehypeAutoLinkHeadings from "rehype-autolink-headings";
 import rehypeHighlight from "rehype-highlight";
 import rehypeSlug from "rehype-slug";
-import type { PostMetaData } from "core/types/Post.type";
 
 type PostMDX = {
   meta: PostMetaData;

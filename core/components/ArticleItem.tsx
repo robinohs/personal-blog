@@ -8,8 +8,7 @@ import {
   UnstyledButton,
 } from "@mantine/core";
 import { NextLink } from "@mantine/next";
-import React from "react";
-import { PostMetaData } from "core/types/Post.type";
+import type { PostMetaData } from "@type/Post.type";
 
 type Props = {
   post: PostMetaData;
