@@ -1,5 +1,5 @@
-import BreadcrumbItem from "types/BreadcrumbItem.type";
-import createBreadcrumb from "utils/createBreadcrumb";
+import BreadcrumbItem from "core/types/BreadcrumbItem.type";
+import createBreadcrumb from "core/utils/createBreadcrumb";
 
 describe("createBreadcrumb", () => {
   it("Generates valid breadcrumb for empty string.", () => {

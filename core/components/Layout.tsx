@@ -1,7 +1,7 @@
 import { Box, Container, Stack } from "@mantine/core";
 import Head from "next/head";
 import React from "react";
-import createTitle from "utils/createTitle";
+import createTitle from "core/utils/createTitle";
 import Breadcrumb from "./Breadcrumb";
 import Footer from "./Footer";
 import Navbar from "./Navbar";

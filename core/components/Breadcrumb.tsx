@@ -3,7 +3,7 @@ import { NextLink } from "@mantine/next";
 import { ChevronRightIcon } from "@modulz/radix-icons";
 import { useRouter } from "next/router";
 import React, { useMemo } from "react";
-import createBreadcrumb from "utils/createBreadcrumb";
+import createBreadcrumb from "core/utils/createBreadcrumb";
 
 const Breadcrumb = () => {
   const router = useRouter();

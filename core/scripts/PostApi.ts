@@ -2,7 +2,7 @@ import fs from "fs";
 import { sync } from "glob";
 import matter from "gray-matter";
 import path from "path";
-import Post from "types/Post.type";
+import Post from "core/types/Post.type";
 
 const POSTS_DIR = path.join(process.cwd(), "posts");
 

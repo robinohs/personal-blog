@@ -9,7 +9,7 @@ import {
 } from "@mantine/core";
 import { NextLink } from "@mantine/next";
 import React from "react";
-import { PostMetaData } from "types/Post.type";
+import { PostMetaData } from "core/types/Post.type";
 
 type Props = {
   post: PostMetaData;
