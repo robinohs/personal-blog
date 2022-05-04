@@ -1,6 +1,5 @@
 import { UnstyledButton } from "@mantine/core";
 import { NextLink } from "@mantine/next";
-import React from "react";
 
 type Props = {
   href: string;

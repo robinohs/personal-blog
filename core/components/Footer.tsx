@@ -1,6 +1,7 @@
 import { Box, Stack, Text, UnstyledButton } from "@mantine/core";
 import { NextLink } from "@mantine/next";
 import { ReactNode } from "react";
+import PageLink from "./PageLink";
 
 const ListHeader = ({ children }: { children: ReactNode }) => (
   <Text
@@ -84,13 +85,27 @@ const Footer = () => (
           />
         </Stack>
       </Box>
-      <Box sx={{ paddingBottom: "25px" }}>
+      <Box>
         <Text
           color="dimmed"
           sx={{
             fontWeight: 300,
             textAlign: "center",
-            marginTop: 45,
+            marginTop: 35,
+          }}
+        >
+          Checkout this code on{" "}
+          <PageLink openInNewTab href="https://github.com/Roboh97/personal-blog">
+            GitHub.
+          </PageLink>
+        </Text>
+      </Box>
+      <Box sx={{ paddingBottom: "55px" }}>
+        <Text
+          color="dimmed"
+          sx={{
+            fontWeight: 300,
+            textAlign: "center",
           }}
         >
           Copyright © 2022 Robin Ohs

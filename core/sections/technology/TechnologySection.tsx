@@ -161,7 +161,7 @@ const TechnologySection = () => (
         />
         <CustomListItem
           text="Next.js"
-          experience="1/2 year +"
+          experience="1 year +"
           href="https://nextjs.org/"
         />
         <CustomListItem
@@ -177,13 +177,13 @@ const TechnologySection = () => (
       </ItemList>
       <ItemList label="Programming languages:">
         <CustomListItem
-          text="Java"
+          text="Java/Kotlin"
           experience="2 year +"
-          href="https://www.java.com/"
+          href="https://kotlinlang.org/"
         />
         <CustomListItem
           text="Typescript"
-          experience="1 year +"
+          experience="2 year +"
           href="https://www.typescriptlang.org/"
         />
         <CustomListItem
