@@ -1,11 +1,15 @@
 import { Text } from "@mantine/core";
+import { Post } from "@prisma/client";
 import type { PostMetaData } from "@type/Post.type";
 import filterPosts from "@util/filterPosts";
+import getViewsForPost from "@util/getViewsForPost";
 import ArticleItem from "core/components/ArticleItem";
 import PaginatedList from "core/components/PaginatedList";
 import SearchBar from "core/components/SearchBar";
 import Section from "core/components/Section";
+import fetcher from "lib/fetcher";
 import { useEffect, useState } from "react";
+import useSWR from "swr";
 
 const ARTICLES_PER_PAGE = 20;
 
@@ -13,6 +17,7 @@ type ArticlesSectionProps = {
   posts: PostMetaData[];
 };
 const ArticlesSection = ({ posts }: ArticlesSectionProps) => {
+  const { data: views } = useSWR<Post[]>("/api/views", fetcher);
   const [query, setQuery] = useState("");
   const [shownPosts, setShownPosts] = useState<PostMetaData[]>([]);
 
@@ -32,7 +37,7 @@ const ArticlesSection = ({ posts }: ArticlesSectionProps) => {
         itemsPerPage={ARTICLES_PER_PAGE}
         items={shownPosts}
       >
-        {(post) => <ArticleItem key={post.slug} post={post} />}
+        {(post) => <ArticleItem key={post.slug} post={post} views={getViewsForPost(post, views)}/>}
       </PaginatedList>
       {shownPosts.length === 0 && query === "" && (
         <Text>No articles found.</Text>

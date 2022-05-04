@@ -1,7 +1,7 @@
-import Layout from "core/components/Layout";
-import ArticlesSection from "core/sections/blog/ArticlesSection";
-import { getAllPosts } from "core/scripts/PostApi";
 import type { PostMetaData } from "@type/Post.type";
+import Layout from "core/components/Layout";
+import { getAllPosts } from "core/scripts/PostApi";
+import ArticlesSection from "core/sections/blog/ArticlesSection";
 
 type Props = {
   posts: PostMetaData[];
