@@ -1,6 +1,6 @@
 import { Anchor, Box, Text } from "@mantine/core";
-import { ChevronRightIcon } from "@modulz/radix-icons";
-import Section from "components/Section";
+import { DotFilledIcon } from "@modulz/radix-icons";
+import Section from "core/components/Section";
 
 const ItemList = ({
   label,
@@ -23,7 +23,7 @@ const ItemList = ({
       sx={{
         width: "100%",
         textAlign: "center",
-        fontWeight: "300",
+        fontWeight: 400,
         fontSize: "25px",
         paddingBottom: 2,
         "@media (min-width: 800px)": {
@@ -94,12 +94,12 @@ const CustomListItem = ({
                 : theme.colors.blue[6],
           })}
         >
-          <ChevronRightIcon />
+          <DotFilledIcon />
         </Text>
         <Text
           sx={(theme) => ({
             width: "110px",
-            fontWeight: "bold",
+            fontWeight: 500,
             color:
               theme.colorScheme === "dark"
                 ? theme.colors.gray[0]
@@ -111,7 +111,7 @@ const CustomListItem = ({
         <Text
           sx={(theme) => ({
             width: "80px",
-            fontWeight: "light",
+            fontWeight: 300,
             fontSize: "14px",
             color:
               theme.colorScheme === "dark"

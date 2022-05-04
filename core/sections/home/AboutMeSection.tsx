@@ -1,6 +1,6 @@
 import { Avatar, Box, Text } from "@mantine/core";
-import PageLink from "components/PageLink";
-import Section from "components/Section";
+import PageLink from "core/components/PageLink";
+import Section from "core/components/Section";
 
 const AboutMeSection = () => (
   <Section title={"About Me."}>

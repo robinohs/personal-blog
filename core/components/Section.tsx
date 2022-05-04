@@ -46,7 +46,7 @@ const Title = ({
             theme.colorScheme === "dark"
               ? theme.colors.gray[2]
               : theme.colors.dark[8],
-          fontWeight: "700",
+          fontWeight: "bold",
           fontSize: "35px",
           margin: 0,
         })}

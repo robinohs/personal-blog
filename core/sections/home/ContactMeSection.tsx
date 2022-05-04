@@ -1,5 +1,5 @@
 import { Anchor, Box, Stack, Text } from "@mantine/core";
-import Section from "components/Section";
+import Section from "core/components/Section";
 import React from "react";
 
 const SocialButton = ({
