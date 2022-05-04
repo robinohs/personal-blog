@@ -15,11 +15,7 @@ const ComputerStuff = () => (
     <List>
       <List.Item>CPU: Intel Core i5-10600k</List.Item>
       <List.Item>GPU: NVIDIA GTX 1060 6GB</List.Item>
-    </List>
-    <Subheading title="Laptop" />
-    <List>
-      <List.Item>CPU: Intel Core i5-10600k</List.Item>
-      <List.Item>GPU: NVIDIA GTX 1060 6GB</List.Item>
+      <List.Item>Laptop: HP 15s i5-1135G7 16GB</List.Item>
     </List>
   </>
 );
@@ -40,6 +36,16 @@ const SoftwareStuff = () => (
     <List>
       <List.Item>Bitwarden</List.Item>
       <List.Item>Photoshop</List.Item>
+    </List>
+  </>
+);
+
+const OtherStuff = () => (
+  <>
+    <Subheading title="Other" />
+    <List>
+      <List.Item>AirPods Pro</List.Item>
+      <List.Item>iPhone XS</List.Item>
     </List>
   </>
 );
@@ -65,6 +71,7 @@ const GearSection = () => {
         <ComputerStuff />
         <CodingStuff />
         <SoftwareStuff />
+        <OtherStuff />
       </Text>
     </Section>
   );

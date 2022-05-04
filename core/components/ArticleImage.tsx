@@ -1,6 +1,5 @@
 import { AspectRatio } from "@mantine/core";
 import Image from "next/image";
-import React from "react";
 
 type Props = {
   aspectRadio: number;

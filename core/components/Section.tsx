@@ -1,13 +1,10 @@
 import { Box, Stack, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
-import React from "react";
 
 const Title = ({
-  subtitle,
   title,
   float,
 }: {
-  subtitle?: string;
   title: string;
   float: "left" | "center" | "right";
 }) => (
@@ -72,11 +69,7 @@ const Section = ({
 
   return (
     <Stack>
-      <Title
-        title={title}
-        float={float ?? (isLarge ? "left" : "center")}
-        subtitle={subtitle}
-      />
+      <Title title={title} float={float ?? (isLarge ? "left" : "center")} />
       {subtitle && (
         <Text
           sx={(theme) => ({
