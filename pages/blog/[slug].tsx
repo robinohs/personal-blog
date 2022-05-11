@@ -1,8 +1,9 @@
-import { Space, Title, TypographyStylesProvider } from "@mantine/core";
+import { Group, Space, Title, TypographyStylesProvider } from "@mantine/core";
 import type { PostMetaData } from "@type/Post.type";
 import ArticleImage from "core/components/ArticleImage";
 import Counter from "core/components/Counter";
 import Layout from "core/components/Layout";
+import ReadingTimeIndicator from "core/components/ReadingTimeIndicator";
 import YouTube from "core/components/YouTube";
 import { getPostFromSlug, getSlugs } from "core/scripts/PostApi";
 import "highlight.js/styles/atom-one-dark.css";
@@ -21,9 +22,12 @@ type PostMDX = {
 const BlogDetailPage = ({ source, meta }: PostMDX) => (
   <Layout title={meta.title} enableBreadcrumb>
     <Title order={1}>{meta.title}</Title>
-    <Counter post={meta} />
+    <Group>
+      <Counter post={meta} />
+      <ReadingTimeIndicator text={source.compiledSource} />
+    </Group>
     <Space h="lg" />
-    <TypographyStylesProvider sx={{fontSize: 17}}>
+    <TypographyStylesProvider sx={{ fontSize: 17 }}>
       <MDXRemote {...source} components={{ YouTube, ArticleImage }} />
     </TypographyStylesProvider>
   </Layout>
