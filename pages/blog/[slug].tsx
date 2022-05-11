@@ -23,7 +23,7 @@ const BlogDetailPage = ({ source, meta }: PostMDX) => (
     <Title order={1}>{meta.title}</Title>
     <Counter post={meta} />
     <Space h="lg" />
-    <TypographyStylesProvider>
+    <TypographyStylesProvider sx={{fontSize: 17}}>
       <MDXRemote {...source} components={{ YouTube, ArticleImage }} />
     </TypographyStylesProvider>
   </Layout>
