@@ -1,0 +1,25 @@
+{
+  "title": "Programming languages",
+  "entries": [
+    {
+      "name": "Java/Kotlin",
+      "experience": "2 year +",
+      "href": "https://kotlinlang.org/"
+    },
+    {
+      "name": "Typescript",
+      "experience": "2 year +",
+      "href": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Python",
+      "experience": "Common",
+      "href": "https://www.python.org/"
+    },
+    {
+      "name": "C",
+      "experience": "Basics",
+      "href": "https://www.iso.org/standard/74528.html"
+    }
+  ]
+}
