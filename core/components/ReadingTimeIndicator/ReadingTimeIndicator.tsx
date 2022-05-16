@@ -1,5 +1,5 @@
 import { Text } from "@mantine/core";
-import readingTimeCalculation from "@util/readingTimeCalculation";
+import readingTimeCalculation from "@utils/readingTimeCalculation";
 
 type Props = {
   text: string;

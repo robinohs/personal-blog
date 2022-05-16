@@ -1,7 +1,7 @@
 import Tech from "@type/Tech.type";
-import Layout from "core/components/Layout";
-import { getAllTech } from "core/scripts/TechApi";
-import { GearSection, TechnologySection } from "core/sections/technology";
+import Layout from "@components/Layout";
+import { getAllTech } from "@scripts/TechApi";
+import { GearSection, TechnologySection } from "@sections/technology";
 import type { NextPage } from "next";
 
 type Props = {

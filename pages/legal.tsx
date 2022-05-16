@@ -1,4 +1,4 @@
-import Layout from "core/components/Layout";
+import Layout from "@components/Layout";
 import type { NextPage } from "next";
 
 const Legal: NextPage = () => (

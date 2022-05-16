@@ -1,6 +1,6 @@
 import { Stack } from "@mantine/core";
-import Layout from "core/components/Layout";
-import { AboutMeSection, ContactMeSection } from "core/sections/home";
+import Layout from "@components/Layout";
+import { AboutMeSection, ContactMeSection } from "@sections/home";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => (

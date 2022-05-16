@@ -1,12 +1,12 @@
 import { Text } from "@mantine/core";
 import { Post } from "@prisma/client";
 import type { PostMetaData } from "@type/Post.type";
-import filterPosts from "@util/filterPosts";
-import getViewsForPost from "@util/getViewsForPost";
-import ArticleItem from "core/components/ArticleItem";
-import PaginatedList from "core/components/PaginatedList";
-import SearchBar from "core/components/SearchBar";
-import Section from "core/components/Section";
+import filterPosts from "@utils/filterPosts";
+import getViewsForPost from "@utils/getViewsForPost";
+import ArticleItem from "@components/ArticleItem";
+import PaginatedList from "@components/PaginatedList";
+import SearchBar from "@components/SearchBar";
+import Section from "@components/Section";
 import fetcher from "lib/fetcher";
 import { useEffect, useState } from "react";
 import useSWR from "swr";

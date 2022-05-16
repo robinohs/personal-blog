@@ -1,8 +1,8 @@
 import { Text } from "@mantine/core";
 import { Post } from "@prisma/client";
-import { PostMetaData } from "@type/Post.type";
-import getViewsForPost from "@util/getViewsForPost";
-import useOneTimeEffect from "core/hooks/useOneTimeEffect";
+import type { PostMetaData } from "@type/Post.type";
+import getViewsForPost from "@utils/getViewsForPost";
+import useOneTimeEffect from "@hooks/useOneTimeEffect";
 import fetcher from "lib/fetcher";
 import useSWR from "swr";
 
