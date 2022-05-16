@@ -1,132 +1,10 @@
-import { Anchor, Box, Text } from "@mantine/core";
-import { DotFilledIcon } from "@modulz/radix-icons";
-import Section from "core/components/Section";
+import { Box } from "@mantine/core";
+import type Tech from "@type/Tech.type";
+import CustomListItem from "@components/CustomListItem";
+import ItemList from "@components/ItemList";
+import Section from "@components/Section";
 
-const ItemList = ({
-  label,
-  children,
-}: {
-  label: string;
-  children?: React.ReactNode;
-}) => (
-  <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      width: "100%",
-      "@media (min-width: 800px)": {
-        alignContent: "flex-start",
-      },
-    }}
-  >
-    <Text
-      sx={{
-        width: "100%",
-        textAlign: "center",
-        fontWeight: 400,
-        fontSize: "25px",
-        paddingBottom: 2,
-        "@media (min-width: 800px)": {
-          textAlign: "left",
-        },
-      }}
-    >
-      {label}
-    </Text>
-    {children}
-  </Box>
-);
-
-const CustomListItem = ({
-  text,
-  experience,
-  href,
-}: {
-  text: string;
-  experience: string;
-  href: string;
-}) => (
-  <Box
-    sx={{
-      width: "100%",
-      display: "flex",
-      alignContent: "center",
-      justifyContent: "center",
-      "@media (min-width: 800px)": {
-        justifyContent: "flex-start",
-      },
-    }}
-  >
-    <Anchor
-      href={href}
-      target="_blank"
-      sx={{
-        ":hover": { textDecoration: "none" },
-      }}
-    >
-      <Box
-        sx={(theme) => ({
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          textAlign: "left",
-          justifyContent: "center",
-          padding: "7px 0",
-          borderRadius: 5,
-          ":hover": {
-            color:
-              theme.colorScheme === "dark"
-                ? theme.colors.blue[4]
-                : theme.colors.blue[2],
-            backgroundColor:
-              theme.colorScheme === "dark"
-                ? theme.colors.gray[9]
-                : theme.colors.gray[1],
-          },
-        })}
-      >
-        <Text
-          sx={(theme) => ({
-            width: "30px",
-            color:
-              theme.colorScheme === "dark"
-                ? theme.colors.blue[4]
-                : theme.colors.blue[6],
-          })}
-        >
-          <DotFilledIcon />
-        </Text>
-        <Text
-          sx={(theme) => ({
-            width: "110px",
-            fontWeight: 500,
-            color:
-              theme.colorScheme === "dark"
-                ? theme.colors.gray[0]
-                : theme.colors.gray[8],
-          })}
-        >
-          {text}
-        </Text>
-        <Text
-          sx={(theme) => ({
-            width: "80px",
-            fontWeight: 300,
-            fontSize: "14px",
-            color:
-              theme.colorScheme === "dark"
-                ? theme.colors.gray[5]
-                : theme.colors.gray[6],
-          })}
-        >
-          {experience}
-        </Text>
-      </Box>
-    </Anchor>
-  </Box>
-);
-
-const TechnologySection = () => (
+const TechnologySection = ({ techList }: { techList: Tech[] }) => (
   <Section
     title={"Technology."}
     subtitle="The following overview shows the technologies I currently use and those I already gathered experience with:"
@@ -148,82 +26,18 @@ const TechnologySection = () => (
         },
       })}
     >
-      <ItemList label="Frameworks / Libraries:">
-        <CustomListItem
-          text="Spring Boot"
-          experience="1 year +"
-          href="https://spring.io"
-        />
-        <CustomListItem
-          text="React.js"
-          experience="1 year +"
-          href="https://reactjs.org/"
-        />
-        <CustomListItem
-          text="Next.js"
-          experience="1 year +"
-          href="https://nextjs.org/"
-        />
-        <CustomListItem
-          text="Blitz.js"
-          experience="Basics"
-          href="https://blitzjs.com/"
-        />
-        <CustomListItem
-          text="Prisma.io"
-          experience="Basics"
-          href="https://www.prisma.io/"
-        />
-      </ItemList>
-      <ItemList label="Programming languages:">
-        <CustomListItem
-          text="Java/Kotlin"
-          experience="2 year +"
-          href="https://kotlinlang.org/"
-        />
-        <CustomListItem
-          text="Typescript"
-          experience="2 year +"
-          href="https://www.typescriptlang.org/"
-        />
-        <CustomListItem
-          text="Python"
-          experience="Common"
-          href="https://www.python.org/"
-        />
-        <CustomListItem
-          text="C#"
-          experience="Basics"
-          href="https://dotnet.microsoft.com/en-us/"
-        />
-        <CustomListItem
-          text="C"
-          experience="Basics"
-          href="https://www.iso.org/standard/74528.html"
-        />
-      </ItemList>
-      <ItemList label="Other Tools / Software:">
-        <CustomListItem
-          text="Atlassian Jira"
-          experience="1 year"
-          href="https://www.atlassian.com/software/jira"
-        />
-        <CustomListItem
-          text="Atlassian Confluence"
-          experience="1 year"
-          href="https://www.atlassian.com/software/confluence"
-        />
-        <CustomListItem
-          text="Git"
-          experience="1 year+"
-          href="https://git-scm.com/"
-        />
-        <CustomListItem
-          text="Continuous Integration"
-          experience="Basics"
-          href="#"
-        />
-      </ItemList>
+      {techList.map((tech) => (
+        <ItemList key={tech.title} label={tech.title}>
+          {tech.entries.map((entry) => (
+            <CustomListItem
+              key={entry.name}
+              text={entry.name}
+              experience={entry.experience}
+              href={entry.href}
+            />
+          ))}
+        </ItemList>
+      ))}
     </Box>
   </Section>
 );

@@ -17,7 +17,11 @@
     "incremental": true,
     "paths": {
       "@type/*": ["core/types/*"],
-      "@util/*": ["core/utils/*"],
+      "@components/*": ["core/components/*"],
+      "@utils/*": ["core/utils/*"],
+      "@hooks/*": ["core/hooks/*"],
+      "@scripts/*": ["core/scripts/*"],
+      "@sections/*": ["core/sections/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts"],

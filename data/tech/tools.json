@@ -1,0 +1,20 @@
+{
+  "title": "Other Tools / Software",
+  "entries": [
+    {
+      "name": "Atlassian Jira",
+      "experience": "1 year",
+      "href": "https://www.atlassian.com/software/jira"
+    },
+    {
+      "name": "Atlassian Confluence",
+      "experience": "1 year",
+      "href": "https://www.atlassian.com/software/confluence"
+    },
+    {
+      "name": "Continuous Integration",
+      "experience": "Basics",
+      "href": "https://www.jenkins.io/"
+    }
+  ]
+}

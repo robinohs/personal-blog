@@ -1,4 +1,4 @@
-import { getSlugs } from "core/scripts/PostApi";
+import { getSlugs } from "@scripts/PostApi";
 import prisma from "lib/prisma";
 import type { NextApiRequest, NextApiResponse } from "next";
 

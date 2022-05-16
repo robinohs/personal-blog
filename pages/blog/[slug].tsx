@@ -1,11 +1,11 @@
 import { Group, Space, Title, TypographyStylesProvider } from "@mantine/core";
 import type { PostMetaData } from "@type/Post.type";
-import ArticleImage from "core/components/ArticleImage";
-import Counter from "core/components/Counter";
-import Layout from "core/components/Layout";
-import ReadingTimeIndicator from "core/components/ReadingTimeIndicator";
-import YouTube from "core/components/YouTube";
-import { getPostFromSlug, getSlugs } from "core/scripts/PostApi";
+import ArticleImage from "@components/ArticleImage";
+import Counter from "@components/Counter";
+import Layout from "@components/Layout";
+import ReadingTimeIndicator from "@components/ReadingTimeIndicator";
+import YouTube from "@components/YouTube";
+import { getPostFromSlug, getSlugs } from "@scripts/PostApi";
 import "highlight.js/styles/atom-one-dark.css";
 import type { GetStaticPaths, GetStaticProps } from "next";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";

@@ -1,4 +1,4 @@
-import createTitle from "core/utils/createTitle";
+import createTitle from "@utils/createTitle";
 
 describe("createTitle", () => {
   it("Renders title correctly for undefined.", () => {

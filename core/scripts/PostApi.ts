@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import path from "path";
 import type Post from "@type/Post.type";
 
-const POSTS_DIR = path.join(process.cwd(), "posts");
+const POSTS_DIR = path.join(process.cwd(), "data/posts");
 
 export const getAllPosts = (): Post[] => {
   const slugs = getSlugs();

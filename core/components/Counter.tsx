@@ -1,9 +1,9 @@
 import { Text } from "@mantine/core";
 import { Post } from "@prisma/client";
-import { PostMetaData } from "@type/Post.type";
-import getViewsForPost from "@util/getViewsForPost";
+import type { PostMetaData } from "@type/Post.type";
+import getViewsForPost from "@utils/getViewsForPost";
+import useOneTimeEffect from "@hooks/useOneTimeEffect";
 import fetcher from "lib/fetcher";
-import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 
 type Props = {
@@ -11,10 +11,10 @@ type Props = {
 };
 
 const Counter = ({ post }: Props) => {
-  const { data: views } = useSWR<Post[]>("/api/views", fetcher);
-  const [, setDidRun] = useState(false);
-  useEffect(() => {
-    const increaseCounter = async () => {
+  const { data: views, mutate } = useSWR<Post[]>("/api/views", fetcher);
+
+  useOneTimeEffect(() => {
+    const increase = async () => {
       await fetch("/api/views", {
         method: "POST",
         headers: {
@@ -22,12 +22,10 @@ const Counter = ({ post }: Props) => {
         },
         body: JSON.stringify({ slug: post.slug }),
       });
+      await mutate();
     };
-    setDidRun((oldVal) => {
-      if (!oldVal) increaseCounter();
-      return true;
-    });
-  }, [post.slug]);
+    increase();
+  });
 
   return (
     <Text color="dimmed">

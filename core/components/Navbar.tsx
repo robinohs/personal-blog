@@ -9,7 +9,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import NextLink from "next/link";
-import ColorSchemeButton from "./ColorSchemeButton";
+import ColorSchemeButton from "@components/ColorSchemeButton";
 
 type LinkType = { to: string; name: string };
 const Links: LinkType[] = [
