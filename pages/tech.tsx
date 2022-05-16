@@ -8,7 +8,7 @@ type Props = {
   techList: Tech[];
 };
 const Use: NextPage<Props> = ({ techList }: Props) => (
-  <Layout title="Use" enableBreadcrumb>
+  <Layout title="Tech" enableBreadcrumb>
     <TechnologySection techList={techList} />
     <GearSection />
   </Layout>
