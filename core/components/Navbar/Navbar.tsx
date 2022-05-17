@@ -1,5 +1,12 @@
 import ColorSchemeButton from "@components/ColorSchemeButton";
-import { Box, Burger, Container, Group, Stack } from "@mantine/core";
+import {
+  Box,
+  Burger,
+  Container,
+  Group,
+  Stack,
+  Transition,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Links from "./Links";
 import useStyles from "./Navbar.style";
@@ -26,15 +33,22 @@ const Navbar = () => {
         </Group>
         <ColorSchemeButton />
       </Group>
-      {opened ? (
-        <Container className={classes.hideLargerThanSm}>
-          <Stack spacing={4}>
-            {Links.map((link) => (
-              <NavLink key={link.name} link={link} />
-            ))}
-          </Stack>
-        </Container>
-      ) : null}
+      <Transition
+        mounted={opened}
+        transition="fade"
+        duration={250}
+        timingFunction="ease"
+      >
+        {(styles) => (
+          <Container className={classes.hideLargerThanSm} style={{ ...styles }}>
+            <Stack spacing={4}>
+              {Links.map((link) => (
+                <NavLink key={link.name} link={link} />
+              ))}
+            </Stack>
+          </Container>
+        )}
+      </Transition>
     </Box>
   );
 };
