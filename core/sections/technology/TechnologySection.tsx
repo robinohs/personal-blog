@@ -1,8 +1,8 @@
-import { Box } from "@mantine/core";
-import type Tech from "@type/Tech.type";
 import CustomListItem from "@components/CustomListItem";
 import ItemList from "@components/ItemList";
 import Section from "@components/Section";
+import { Box } from "@mantine/core";
+import type Tech from "@type/Tech.type";
 
 const TechnologySection = ({ techList }: { techList: Tech[] }) => (
   <Section
