@@ -12,7 +12,15 @@ const GearSection = ({
       title="Gear"
       subtitle="This is the gear and stuff I'm currently using for Coding, gaming and listening to music:"
     >
-      <TypographyStylesProvider sx={{ fontSize: 17 }}>
+      <TypographyStylesProvider
+        sx={(theme) => ({
+          fontSize: 16,
+          color:
+            theme.colorScheme === "dark"
+              ? theme.colors.gray[4]
+              : theme.colors.dark[6],
+        })}
+      >
         <MDXRemote {...gearData} />
       </TypographyStylesProvider>
     </Section>
