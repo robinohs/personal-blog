@@ -11,9 +11,6 @@ type Props = {
 const TimeLineSection = ({ educationalCareer, professionalCareer }: Props) => {
   const { classes } = useStyles();
 
-  console.log(educationalCareer);
-  console.log(professionalCareer);
-
   return (
     <Section
       title="Timeline"
