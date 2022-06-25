@@ -18,7 +18,7 @@ const Legal: NextPage = () => (
       <li>
         <strong>Company</strong> (referred to as either &quot;the Company&quot;,
         &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Disclaimer)
-        refers to https://robin-ohs.vercel.app/.
+        refers to https://robinohs.dev/.
       </li>
       <li>
         <strong>Service</strong> refers to the Website.
@@ -29,14 +29,14 @@ const Legal: NextPage = () => (
         accessing or using the Service, as applicable.
       </li>
       <li>
-        <strong>Website</strong> refers to https://robin-ohs.vercel.app/,
+        <strong>Website</strong> refers to https://robinohs.dev,
         accessible from{" "}
         <a
-          href="https://robin-ohs.vercel.app/"
+          href="https://robinohs.dev/"
           rel="external nofollow noopener noreferrer"
           target="_blank"
         >
-          https://robin-ohs.vercel.app/
+          https://robinohs.dev
         </a>
       </li>
     </ul>
@@ -155,7 +155,7 @@ const Legal: NextPage = () => (
     <h1>Contact Us</h1>
     <p>If you have any questions about this Disclaimer, You can contact Us:</p>
     <ul>
-      <li>By email: dev-roboh97@outlook.com</li>
+      <li>By email: info@robinohs.dev</li>
     </ul>
   </Layout>
 );
