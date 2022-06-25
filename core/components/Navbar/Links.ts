@@ -13,6 +13,10 @@ const Links: LinkType[] = [
     name: "Blog",
     to: "/blog",
   },
+  {
+    name: "Projects",
+    to: "/projects",
+  },
 ];
 
 export default Links;

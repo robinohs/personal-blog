@@ -1,13 +1,14 @@
-import { UnstyledButton } from "@mantine/core";
+import { Sx, UnstyledButton } from "@mantine/core";
 import { NextLink } from "@mantine/next";
 
 type Props = {
   href: string;
   openInNewTab?: boolean;
   children?: string;
+  sx?: Sx;
 };
 
-const PageLink = ({ href, openInNewTab = false, children }: Props) => (
+const PageLink = ({ href, openInNewTab = false, sx, children }: Props) => (
   <UnstyledButton
     component={NextLink}
     target={openInNewTab ? "_blank" : "_self"}
@@ -20,6 +21,7 @@ const PageLink = ({ href, openInNewTab = false, children }: Props) => (
       ":hover": {
         textDecoration: "underline",
       },
+      ...sx,
     })}
   >
     {children}
