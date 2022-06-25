@@ -13,7 +13,7 @@ const TimeLineSection = ({ educationalCareer, professionalCareer }: Props) => {
 
   return (
     <Section
-      title="Timeline"
+      title="Timeline."
       subtitle="The following two timelines visualize both my professional and educational career."
     >
       <Stack spacing="xl" className={classes.timelineWrapper}>

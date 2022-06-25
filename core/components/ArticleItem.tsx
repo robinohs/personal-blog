@@ -25,6 +25,7 @@ const ArticleItem = ({ post, views }: Props) => (
           borderRadius: 5,
           textDecoration: "none",
           padding: "15px 10px",
+          border: `1px solid ${theme.colorScheme === 'light' && theme.colors.gray[2]}`,
           ":hover": {
             backgroundColor:
               theme.colorScheme === "dark"
