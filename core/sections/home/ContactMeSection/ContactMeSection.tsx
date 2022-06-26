@@ -20,7 +20,7 @@ const ContactMeSection = () => {
         <SocialButton
           icon="bi bi-github"
           name="GitHub"
-          href="https://github.com/Roboh97"
+          href="https://github.com/robinohs"
         />
         <SocialButton
           icon="bi bi-instagram"

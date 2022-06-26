@@ -39,7 +39,7 @@ const useStyles = createStyles((theme) => ({
     color:
       theme.colorScheme === "dark"
         ? theme.colors.gray[5]
-        : theme.colors.gray[8],
+        : theme.colors.dark[3],
     "@media (min-width: 800px)": {
       textAlign: "left",
     },
