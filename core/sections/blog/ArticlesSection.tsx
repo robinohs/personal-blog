@@ -5,7 +5,7 @@ import Section from "@components/Section";
 import { Text } from "@mantine/core";
 import { Post } from "@prisma/client";
 import type { PostMetaData } from "@type/Post.type";
-import filterPosts from "@utils/filterPosts";
+import createFilter from "@utils/createSearch";
 import getViewsForPost from "@utils/getViewsForPost";
 import fetcher from "lib/fetcher";
 import { useState } from "react";
@@ -26,7 +26,7 @@ const ArticlesSection = ({ posts }: ArticlesSectionProps) => {
     >
       <SearchableList
         items={posts}
-        searchFilter={filterPosts}
+        searchFilter={createFilter(["tags", "title"])}
         getQueryHandler={setQuery}
       >
         {(items) => (
