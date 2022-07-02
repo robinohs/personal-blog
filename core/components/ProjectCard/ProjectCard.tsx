@@ -55,7 +55,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <ListItem leftText={"Topics:"}>
         <Group position="left" spacing="xs" className={classes.group}>
           {project.topics.map((topic) => (
-            <Badge key={topic} color="blue" variant="light">
+            <Badge
+              key={`${topic}-${project.name}`}
+              color="blue"
+              variant="light"
+            >
               {topic}
             </Badge>
           ))}
@@ -70,7 +74,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
       )}
       {project.documentation && (
         <ListItem leftText={"Documentation:"}>
-          <PageLink sx={{ fontSize: 15 }} href={project.documentation} openInNewTab>
+          <PageLink
+            sx={{ fontSize: 15 }}
+            href={project.documentation}
+            openInNewTab
+          >
             Project documentation
           </PageLink>
         </ListItem>
