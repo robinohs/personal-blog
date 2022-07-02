@@ -61,11 +61,20 @@ const ProjectCard = ({ project }: { project: Project }) => {
           ))}
         </Group>
       </ListItem>
-      <ListItem leftText={"Repository:"}>
-        <PageLink sx={{ fontSize: 15 }} href={project.link}>
-          Project repository
-        </PageLink>
-      </ListItem>
+      {project.link && (
+        <ListItem leftText={"Repository:"}>
+          <PageLink sx={{ fontSize: 15 }} href={project.link} openInNewTab>
+            Project repository
+          </PageLink>
+        </ListItem>
+      )}
+      {project.documentation && (
+        <ListItem leftText={"Documentation:"}>
+          <PageLink sx={{ fontSize: 15 }} href={project.documentation} openInNewTab>
+            Project documentation
+          </PageLink>
+        </ListItem>
+      )}
     </Card>
   );
 };
