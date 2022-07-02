@@ -1,13 +1,13 @@
 import Fuse from "fuse.js";
-import type { PostMetaData } from "@type/Post.type";
+import type Project from "@type/Project.type";
 
-const filterPosts = (query: string, posts: PostMetaData[]): PostMetaData[] => {
-  if (query === "") return posts;
+const filterProjects = (query: string, projects: Project[]): Project[] => {
+  if (query === "") return projects;
 
-  const fuse = new Fuse(posts, {
+  const fuse = new Fuse(projects, {
     fieldNormWeight: 0,
     includeScore: true,
-    keys: ["title", "tags"],
+    keys: ["name", "language", "topics"],
   });
 
   return fuse
@@ -23,4 +23,4 @@ const filterPosts = (query: string, posts: PostMetaData[]): PostMetaData[] => {
     .map((item) => item.item);
 };
 
-export default filterPosts;
+export default filterProjects;
