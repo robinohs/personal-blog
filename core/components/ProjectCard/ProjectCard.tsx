@@ -55,17 +55,34 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <ListItem leftText={"Topics:"}>
         <Group position="left" spacing="xs" className={classes.group}>
           {project.topics.map((topic) => (
-            <Badge key={topic} color="blue" variant="light">
+            <Badge
+              key={`${topic}-${project.name}`}
+              color="blue"
+              variant="light"
+            >
               {topic}
             </Badge>
           ))}
         </Group>
       </ListItem>
-      <ListItem leftText={"Repository:"}>
-        <PageLink sx={{ fontSize: 15 }} href={project.link}>
-          Project repository
-        </PageLink>
-      </ListItem>
+      {project.link && (
+        <ListItem leftText={"Repository:"}>
+          <PageLink sx={{ fontSize: 15 }} href={project.link} openInNewTab>
+            Project repository
+          </PageLink>
+        </ListItem>
+      )}
+      {project.documentation && (
+        <ListItem leftText={"Documentation:"}>
+          <PageLink
+            sx={{ fontSize: 15 }}
+            href={project.documentation}
+            openInNewTab
+          >
+            Project documentation
+          </PageLink>
+        </ListItem>
+      )}
     </Card>
   );
 };

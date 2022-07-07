@@ -5,6 +5,7 @@ export default interface Project {
   topics: string[];
   language: string;
   description: string;
-  link: string;
+  link: string | null;
+  documentation: string | null;
   image: string | null;
 }

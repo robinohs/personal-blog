@@ -14,7 +14,7 @@ const useStyles = createStyles((theme) => ({
     minWidth: "100px",
   },
   listBade: {
-    width: "90px",
+    width: "120px",
   },
   image: {
     marginTop: theme.spacing.md,
