@@ -5,6 +5,6 @@
  * @returns the created title.
  */
 const createTitle = (title: String | undefined) =>
-  `Blog@Roboh97${title ? ` - ${title}` : ""}`;
+  `Robin Ohs${title ? ` - ${title}` : ""}`;
 
 export default createTitle;
