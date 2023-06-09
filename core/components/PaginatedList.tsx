@@ -35,7 +35,7 @@ const PaginatedList = <T extends Object>({
       <Stack sx={sx}>{paginatePosts.map((post) => children(post))}</Stack>
       {items.length > 0 && (
         <Stack align="center" sx={{ marginTop: "55px" }}>
-          <Pagination page={activePage} onChange={setPage} total={maxPages} />
+          <Pagination value={activePage} onChange={setPage} total={maxPages} />
         </Stack>
       )}
     </Box>

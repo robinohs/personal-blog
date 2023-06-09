@@ -1,17 +1,20 @@
 [
   {
+    "company": "Gymnasium Saarburg",
     "title": "A-Levels (Abitur)",
-    "subtext": "Gymnasium Saarburg",
+    "subtext": "My A-Levels focused on physics, math and history as the major subjects. During the computer science class, I learned the basics of programming and developed an interest in it. This experience motivated me to pursue further a study in this field.",
     "date": "March 2017"
   },
   {
+    "company": "Saarland University",
     "title": "Bachelor of Science - Cybersecurity",
-    "subtext": "Saarland University",
+    "subtext": "Cybersecurity is a fascinating and important field of study. It teaches how to protect data and systems from malicious attacks and prevent security breaches. Writing software that is secure and robust requires careful design and testing. During this program, I learned various concepts and techniques to achieve these goals. This knowledge brightened my mind and made me more confident in developing secure software.",
     "date": "Oct. 2017 – Sept. 2020"
   },
   {
+    "company": "Saarland University",
     "title": "Master of Science - Computer Science",
-    "subtext": "Saarland University",
-    "date": "Apr. 2021 – Apr. 2023"
+    "subtext": "My master studies of computer science deepened my software development skills, introduced me to space informatics and taught me how to write efficient and reliable software with systems programming languages such as Rust. It further developed my mind to write secure and dependable software.",
+    "date": "Apr. 2021 – Oct. 2023"
   }
 ]

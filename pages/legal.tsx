@@ -2,7 +2,7 @@ import Layout from "@components/Layout";
 import type { NextPage } from "next";
 
 const Legal: NextPage = () => (
-  <Layout title="Legal" enableBreadcrumb>
+  <Layout title="Legal">
     <h1>Disclaimer</h1>
     <p>Last updated: May 02, 2022</p>
     <h1>Interpretation and Definitions</h1>
@@ -18,7 +18,7 @@ const Legal: NextPage = () => (
       <li>
         <strong>Company</strong> (referred to as either &quot;the Company&quot;,
         &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Disclaimer)
-        refers to https://robin-ohs.vercel.app/.
+        refers to https://robinohs.dev/.
       </li>
       <li>
         <strong>Service</strong> refers to the Website.
@@ -29,14 +29,14 @@ const Legal: NextPage = () => (
         accessing or using the Service, as applicable.
       </li>
       <li>
-        <strong>Website</strong> refers to https://robin-ohs.vercel.app/,
+        <strong>Website</strong> refers to https://robinohs.dev/,
         accessible from{" "}
         <a
-          href="https://robin-ohs.vercel.app/"
+          href="https://robinohs.dev/"
           rel="external nofollow noopener noreferrer"
           target="_blank"
         >
-          https://robin-ohs.vercel.app/
+          https://robinohs.dev/
         </a>
       </li>
     </ul>
