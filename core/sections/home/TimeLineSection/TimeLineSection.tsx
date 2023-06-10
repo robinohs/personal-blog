@@ -13,12 +13,12 @@ const TimeLineSection = ({ educationalCareer, professionalCareer }: Props) => {
 
   return (
     <Box className={classes.outerBox}>
-      <Section id="timeline" title="Timeline." subtitle="The following two timelines visualize both my professional and educational career.">
+      <Section id="timeline" title="Timeline." subtitle="The following two timelines visualize both my professional and educational career." sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
         <Stack spacing="xl" className={classes.timelineWrapper}>
           <Title mt={12} order={3}>
             Educational career
           </Title>
-          <Timeline active={4} bulletSize={14} lineWidth={2} className={classes.timeline}>
+          <Timeline active={2} bulletSize={14} lineWidth={2} className={classes.timeline}>
             {educationalCareer.map((entry) => (
               <Timeline.Item key={entry.title} title={entry.company}>
                 <Text size="md">

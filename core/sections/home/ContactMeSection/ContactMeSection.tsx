@@ -8,7 +8,7 @@ const ContactMeSection = () => {
   const { classes } = useStyles();
   return (
     <Box className={classes.outerBox}>
-      <Section id="contact" title="Stay in contact." subtitle="Feel free to reach out to me on the following social platforms:">
+      <Section id="contact" title="Stay in contact." subtitle="Feel free to reach out to me on the following social platforms:" sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
         <Box className={classes.wrapper}>
           <SocialButton icon="bi bi-linkedin" name="Linkedin" href="https://www.linkedin.com/in/robin-ohs-b6b4051a1/?locale=en_US" />
           <SocialButton icon="bi bi-github" name="GitHub" href="https://github.com/robinohs" />

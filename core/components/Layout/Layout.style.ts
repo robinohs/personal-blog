@@ -2,12 +2,14 @@ import { createStyles } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   mainWrapper: {
-    // background: "rgba(17,17,17)",
-    // backgroundImage: theme.fn.gradient({ from: 'red', to: 'orange', deg: 45 }),
-    background: "linear-gradient(40deg, rgba(17, 17, 17, 1) 0 %, rgba(35, 35, 35, 1) 50 %)",
-    // backgroundColor: theme.colorScheme === "dark" ? "#2d2e32;" : "#FBFBFB;",
+    // background: theme.fn.linearGradient(40, "rgba(17, 17, 17, 0)", "rgba(35, 35, 35, 0.85)"),
+    backgroundColor: theme.colorScheme === "dark" ? "#121212;" : "#F9F5F6;",
     width: "100%",
     minHeight: "100vh",
+    color:
+      theme.colorScheme === "dark"
+        ? theme.colors.gray[4]
+        : theme.colors.gray[8],
   },
   main: { flexGrow: 1, flexDirection: "column" },
 }));

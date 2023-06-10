@@ -6,10 +6,12 @@ const useStyles = createStyles((theme) => ({
   },
   brand: {
     fontSize: 26,
-    fontWeight: "bold"
+    fontWeight: 600,
+    letterSpacing: 1,
+    textTransform: "uppercase",
   },
   firstName: {
-    color: "white",
+    color: theme.colorScheme === "dark" ? "white" : "black",
   },
   lastName: {
   }

@@ -2,7 +2,7 @@ import { createStyles } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   outerBox: {
-    // backgroundColor: theme.colorScheme === "dark" ? "#181818" : theme.colors.gray[2]
+    // backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : theme.colors.gray[2]
   },
   wrapper: {
     display: "flex",
@@ -19,13 +19,12 @@ const useStyles = createStyles((theme) => ({
   },
   text: {
     textAlign: "center",
+    color: theme.colorScheme === "dark"
+      ? theme.colors.dark[1]
+      : theme.colors.dark[6],
     "@media (min-width: 800px)": {
       textAlign: "left",
     },
-    color:
-      theme.colorScheme === "dark"
-        ? theme.colors.gray[5]
-        : theme.colors.gray[8],
   },
 }));
 

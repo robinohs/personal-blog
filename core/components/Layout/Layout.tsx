@@ -25,14 +25,16 @@ const Layout = ({ enableBreadcrumb = false, title, children }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Stack className={classes.mainWrapper} spacing={0}>
-        <Navbar />
-        {enableBreadcrumb && <Breadcrumb />}
-        <Box component="main" className={classes.main}>
-          {children}
-        </Box>
-        <Footer />
-      </Stack>
+      <Box id="bg">
+        <Stack className={classes.mainWrapper} spacing={0}>
+          <Navbar />
+          {enableBreadcrumb && <Breadcrumb />}
+          <Box component="main" className={classes.main}>
+            {children}
+          </Box>
+          <Footer />
+        </Stack>
+      </Box>
       <Affix position={{ bottom: rem(50), right: rem(50) }}>
         <Transition transition="slide-up" mounted={scroll.y > 550}>
           {(transitionStyles) => (

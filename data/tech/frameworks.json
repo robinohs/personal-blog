@@ -1,25 +1,20 @@
 {
-  "title": "Frameworks / Libraries",
+  "title": "Frameworks",
   "entries": [
     {
-      "name": "Spring Boot",
+      "name": "Spring",
       "experience": "1 year +",
       "href": "https://spring.io"
     },
     {
-      "name": "React.js",
+      "name": "React/Next.js",
       "experience": "1 year +",
       "href": "https://reactjs.org/"
     },
     {
-      "name": "Next.js",
-      "experience": "1 year +",
-      "href": "https://nextjs.org/"
-    },
-    {
-      "name": "Prisma.io",
+      "name": "Omnetpp",
       "experience": "Basics",
-      "href": "https://www.prisma.io/"
+      "href": "https://omnetpp.org/"
     }
   ]
 }

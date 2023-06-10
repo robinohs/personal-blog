@@ -6,12 +6,20 @@ const Links: LinkType[] = [
     to: "#",
   },
   {
+    name: "Tech",
+    to: "#technology",
+  },
+  {
     name: "Projects",
     to: "#projects",
   },
   {
     name: "Contact",
     to: "#contact",
+  },
+  {
+    name: "CV",
+    to: "cv.pdf",
   },
 ];
 

@@ -15,7 +15,7 @@ const useStyles = createStyles((theme) => ({
     ref: getStylesRef('image'),
     backgroundSize: 'cover',
     backgroundPosition: "center",
-    transition: 'transform 500ms ease',
+    transition: 'transform 200ms ease',
   },
   overlay: {
     position: 'absolute',
@@ -23,7 +23,7 @@ const useStyles = createStyles((theme) => ({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .95) 90%)',
+    backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 1) 90%)',
   },
   content: {
     height: '100%',

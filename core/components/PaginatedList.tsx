@@ -32,7 +32,7 @@ const PaginatedList = <T extends Object>({
 
   return (
     <Box>
-      <Stack sx={sx}>{paginatePosts.map((post) => children(post))}</Stack>
+      <Stack spacing="xl" sx={sx}>{paginatePosts.map((post) => children(post))}</Stack>
       {items.length > 0 && (
         <Stack align="center" sx={{ marginTop: "55px" }}>
           <Pagination value={activePage} onChange={setPage} total={maxPages} />

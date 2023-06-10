@@ -7,7 +7,7 @@ const AboutMeSection = () => {
   const { classes } = useStyles();
   return (
     <Box className={classes.outerBox}>
-      <Section id="about" title={"About Me."}>
+      <Section id="about" title={"About Me."} sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
         <Box className={classes.wrapper}>
           <Text className={classes.text}>
             Hi. My name is Robin and I am currently doing my masters degree in Computer Science at <PageLink href="https://www.uni-saarland.de/en/home.html">Saarland University (Germany)</PageLink> which I will complete in early 2023.

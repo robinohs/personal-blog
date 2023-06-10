@@ -9,7 +9,7 @@ const TechnologySection = ({ techList }: { techList: Tech[] }) => {
   const { classes } = useStyles();
   return (
     <Box className={classes.outerBox}>
-      <Section id="technology" title={"Technology."} subtitle="The following overview shows the technologies I currently use and those I already gathered experience with:">
+      <Section id="technology" title={"Technology."} subtitle="The following overview shows the technologies I currently use and those I already gathered experience with:" sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
         <Box
           sx={(theme) => ({
             width: "100%",

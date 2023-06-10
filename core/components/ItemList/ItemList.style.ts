@@ -12,8 +12,10 @@ const useStyles = createStyles({
   text: {
     width: "100%",
     textAlign: "center",
-    fontWeight: 400,
-    fontSize: "25px",
+    fontWeight: 500,
+    fontSize: "20px",
+    letterSpacing: 1,
+    textTransform: "uppercase",
     paddingBottom: 2,
     "@media (min-width: 800px)": {
       textAlign: "left",

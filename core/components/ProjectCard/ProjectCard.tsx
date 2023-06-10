@@ -1,27 +1,25 @@
 import PageLink from "@components/PageLink";
-import { Badge, Card, Center, Group, Paper, Stack, Text } from "@mantine/core";
-import Image from "next/image";
+import { Badge, Card, Center, Group, Stack, Text } from "@mantine/core";
 import Project from "@type/Project.type";
 import React from "react";
 import useStyles from "./ProjectCard.style";
-import { EyeOpenIcon } from "@modulz/radix-icons";
 
-const ListItem = ({ leftText, children }: { leftText: string; children: React.ReactNode }) => {
-  const { classes } = useStyles();
-  return (
-    <Group position="left" className={classes.group}>
-      <Text weight={400} className={classes.listLeft}>
-        {leftText}
-      </Text>
-      {children}
-    </Group>
-  );
-};
+// const ListItem = ({ leftText, children }: { leftText: string; children: React.ReactNode }) => {
+//   const { classes } = useStyles();
+//   return (
+//     <Group position="left" className={classes.group}>
+//       <Text weight={400} className={classes.listLeft}>
+//         {leftText}
+//       </Text>
+//       {children}
+//     </Group>
+//   );
+// };
 
 const ProjectCard = ({ project }: { project: Project }) => {
-  const { classes, theme } = useStyles();
+  const { classes } = useStyles();
   return (
-    <Card p="lg" shadow="lg" className={classes.card} radius="md">
+    <Card p="lg" shadow="lg" className={classes.card} radius="md" withBorder>
       <div className={classes.image} style={{ backgroundImage: `url(${`/images/${project.image}`})` }} />
       <div className={classes.overlay} />
 
