@@ -2,12 +2,8 @@ import type LinkType from "./Link.type";
 
 const Links: LinkType[] = [
   {
-    name: "Home",
-    to: "#",
-  },
-  {
-    name: "Tech",
-    to: "#technology",
+    name: "Publications",
+    to: "#publications",
   },
   {
     name: "Projects",
