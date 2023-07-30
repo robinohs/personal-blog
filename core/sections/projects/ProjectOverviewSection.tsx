@@ -17,7 +17,7 @@ const ProjectOverviewSection = ({ projects }: Props) => {
   const { classes } = useStyles();
   return (
     <Box className={classes.outerBox}>
-      <Section id="projects" title="Projects." subtitle="At the moment, I’m working on these projects:" sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
+      <Section id="projects" title="Projects." subtitle="I work on these projects:" sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
         <FilterList filterFor={["type", "language"]} items={projects}>
           {(filterItems) => (
             <Box sx={{ marginTop: "25px" }}>

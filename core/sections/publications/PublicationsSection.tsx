@@ -15,7 +15,7 @@ const PublicationsSection = ({ publications }: Props) => {
   const { classes } = useStyles();
   return (
     <Box className={classes.outerBox}>
-      <Section id="publications" title="Publications." subtitle="I was honored with the opportunity to co-publish with different authors. A list of our works is given below:" sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
+      <Section id="publications" title="Publications." subtitle="I was honored with the opportunity to co-publish with different authors. An overview of our works is given below:" sx={(theme) => ({ backgroundColor: theme.colorScheme === "dark" ? "#1e1e1e" : "white" })}>
         <FilterList filterFor={["year"]} items={publications}>
           {(filterItems) => (
             <Box sx={{ marginTop: "25px" }}>

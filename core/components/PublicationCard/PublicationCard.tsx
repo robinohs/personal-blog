@@ -8,7 +8,7 @@ const PublicationCard = ({ publication }: { publication: Publication }) => {
   return (
     <Card>
       <Stack spacing={2}>
-        <Text fs="italic" fw="bolder">
+        <Text fs="italic" fw="bolder" fz={18}>
           {publication.title} [{publication.year}]
         </Text>
         <Space h="xs" />
