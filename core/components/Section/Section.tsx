@@ -1,14 +1,9 @@
-import { Box, Stack, Text } from "@mantine/core";
+import { Box, Stack, Sx, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import useStyles from "./Section.style";
+import Container from "@components/Container";
 
-const Title = ({
-  title,
-  float,
-}: {
-  title: string;
-  float: "left" | "center" | "right";
-}) => {
+const Title = ({ title, float }: { title: string; float: "left" | "center" | "right" }) => {
   const { classes } = useStyles();
 
   return (
@@ -24,26 +19,26 @@ const Title = ({
   );
 };
 
-const Section = ({
-  title,
-  subtitle,
-  children,
-  float,
-}: {
+type Props = {
+  id?: string;
   title: string;
   subtitle?: string;
-  children?: React.ReactNode;
   float?: "left" | "center" | "right";
-}) => {
+  sx?: Sx;
+  children?: React.ReactNode;
+};
+const Section = ({ id, title, subtitle, float, sx, children }: Props) => {
   const { classes } = useStyles();
   const isLarge = useMediaQuery("(min-width: 800px)", true);
 
   return (
-    <Stack>
-      <Title title={title} float={float ?? (isLarge ? "left" : "center")} />
-      {subtitle && <Text className={classes.subtext}>{subtitle}</Text>}
-      {children}
-    </Stack>
+    <Container sx={sx}>
+      <Stack id={id}>
+        <Title title={title} float={float ?? (isLarge ? "left" : "center")} />
+        {subtitle && <Text className={classes.subtext}>{subtitle}</Text>}
+        {children}
+      </Stack>
+    </Container>
   );
 };
 

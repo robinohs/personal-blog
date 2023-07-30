@@ -1,5 +1,5 @@
 import { Sx, UnstyledButton } from "@mantine/core";
-import { NextLink } from "@mantine/next";
+import Link from 'next/link';
 
 type Props = {
   href: string;
@@ -10,7 +10,7 @@ type Props = {
 
 const PageLink = ({ href, openInNewTab = false, sx, children }: Props) => (
   <UnstyledButton
-    component={NextLink}
+    component={Link}
     target={openInNewTab ? "_blank" : "_self"}
     href={href}
     sx={(theme) => ({

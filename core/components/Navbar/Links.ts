@@ -2,20 +2,20 @@ import type LinkType from "./Link.type";
 
 const Links: LinkType[] = [
   {
-    name: "Home",
-    to: "/",
-  },
-  {
-    name: "Tech",
-    to: "/tech",
-  },
-  {
-    name: "Blog",
-    to: "/blog",
+    name: "Publications",
+    to: "#publications",
   },
   {
     name: "Projects",
-    to: "/projects",
+    to: "#projects",
+  },
+  {
+    name: "Contact",
+    to: "#contact",
+  },
+  {
+    name: "CV",
+    to: "cv.pdf",
   },
 ];
 

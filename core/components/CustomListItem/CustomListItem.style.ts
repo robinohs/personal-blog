@@ -21,7 +21,9 @@ const useStyles = createStyles((theme) => ({
     justifyContent: "center",
     padding: "7px 0",
     borderRadius: 5,
+    transition: 'transform 200ms ease',
     ":hover": {
+      transform: 'scale(1.04)',
       color:
         theme.colorScheme === "dark"
           ? theme.colors.blue[4]

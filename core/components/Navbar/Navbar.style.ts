@@ -1,12 +1,17 @@
 import { createStyles } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
+  outerBox: {
+    backgroundColor: theme.colorScheme === "dark" ? theme.colors.dark[7] : "white"
+  },
   navLink: {
+    textTransform: "uppercase",
+    fontWeight: 400,
+    letterSpacing: 2,
     color:
       theme.colorScheme === "dark"
-        ? theme.colors.gray[4]
+        ? theme.colors.gray[2]
         : theme.colors.dark[4],
-    marginLeft: "-18px",
     ":hover": {
       backgroundColor:
         theme.colorScheme === "dark"
@@ -15,24 +20,15 @@ const useStyles = createStyles((theme) => ({
     },
   },
   navbarWrapper: {
-    padding: "15px 0",
     width: "100%",
     transition: "all",
+    paddingTop: 25,
+    paddingBottom: 15,
   },
   navbarGroupWrapper: {
     width: "100%",
     height: "75px",
   },
-  hideLargerThanSm: {
-    [`@media (min-width: ${theme.breakpoints.sm}px)`]: {
-      display: "none"
-    }
-  },
-  hideSmallerThanSm: {
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      display: "none"
-    }
-  }
 }));
 
 export default useStyles;

@@ -6,6 +6,7 @@ export default interface Project {
   language: string;
   description: string;
   link: string | null;
+  webpage: string | null;
   documentation: string | null;
   image: string | null;
 }

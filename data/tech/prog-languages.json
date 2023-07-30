@@ -1,5 +1,5 @@
 {
-  "title": "Programming languages",
+  "title": "Languages",
   "entries": [
     {
       "name": "Java/Kotlin",
@@ -12,12 +12,17 @@
       "href": "https://www.typescriptlang.org/"
     },
     {
+      "name": "Rust",
+      "experience": "1 year",
+      "href": "https://www.rust-lang.org/"
+    },
+    {
       "name": "Python",
       "experience": "Common",
       "href": "https://www.python.org/"
     },
     {
-      "name": "C",
+      "name": "C/C++",
       "experience": "Basics",
       "href": "https://www.iso.org/standard/74528.html"
     }

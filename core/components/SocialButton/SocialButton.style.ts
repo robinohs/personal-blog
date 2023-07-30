@@ -3,10 +3,12 @@ import { createStyles } from "@mantine/core";
 const useStyles = createStyles((theme) => ({
   anchor: {
     borderRadius: "10px",
-    width: "150px",
-    height: "150px",
+    width: "120px",
+    height: "120px",
     cursor: "pointer",
+    transition: 'transform 200ms ease',
     ":hover": {
+      transform: 'scale(1.1)',
       textDecoration: "none",
       backgroundColor:
         theme.colorScheme === "dark"
@@ -18,8 +20,8 @@ const useStyles = createStyles((theme) => ({
     height: "100%",
   },
   icon: {
-    fontSize: 54,
-    height: 54,
+    fontSize: 45,
+    height: 45,
   },
   label: {
     color:
