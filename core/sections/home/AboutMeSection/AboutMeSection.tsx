@@ -23,7 +23,7 @@ const AboutMeSection = () => {
             During my master studies I worked as a student assistant at the chair &quot;Dependable Systems and Software&quot; at Saarland University.
             <br />
             My tasks included:
-            <List className={classes.text}>
+            <List className={classes.text} withPadding>
               <List.Item>
                 the development of a satellite energy simulator using <PageLink href="https://reactjs.org/">React</PageLink> and <PageLink href="https://spring.io/">Spring Boot</PageLink> with the help of <PageLink href="https://www.orekit.org/">Orekit</PageLink> for space related computations,
               </List.Item>
