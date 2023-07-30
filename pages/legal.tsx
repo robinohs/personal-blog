@@ -29,14 +29,14 @@ const Legal: NextPage = () => (
         accessing or using the Service, as applicable.
       </li>
       <li>
-        <strong>Website</strong> refers to https://robinohs.dev/,
+        <strong>Website</strong> refers to https://robinohs.dev,
         accessible from{" "}
         <a
           href="https://robinohs.dev/"
           rel="external nofollow noopener noreferrer"
           target="_blank"
         >
-          https://robinohs.dev/
+          https://robinohs.dev
         </a>
       </li>
     </ul>
@@ -155,7 +155,7 @@ const Legal: NextPage = () => (
     <h1>Contact Us</h1>
     <p>If you have any questions about this Disclaimer, You can contact Us:</p>
     <ul>
-      <li>By email: dev-roboh97@outlook.com</li>
+      <li>By email: info@robinohs.dev</li>
     </ul>
   </Layout>
 );
