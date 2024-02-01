@@ -16,5 +16,11 @@
     "title": "Graduate Research Assistant",
     "subtext": "As a software engineer, I was involved in the development of Rust libraries for resource and carbon-awareness. These libraries enable applications to monitor and optimize their energy consumption and carbon footprint. I applied my skills in Rust programming, software design, and testing to deliver high-quality code and contribute to the ongoing research.",
     "date": "Jan 2023 – July 2023"
+  },
+  {
+    "company": "Saarland University - Chair for Dependable Systems and Software",
+    "title": "Ph.D. Student",
+    "subtext": "As a Ph.D. Student, I work on developing reliable and efficient solutions for satellite networks including routing protocols, network security and simulation environments. Additionally, I have a research interest in sustainability in computing. I aim to contribute to the advancement of space technology and the protection of the environment by designing systems that exploit scheduling to emit as least carbon dioxide as possible.",
+    "date": "Oct 2023 – Now"
   }
 ]
