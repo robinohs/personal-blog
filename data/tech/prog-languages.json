@@ -2,27 +2,27 @@
   "title": "Languages",
   "entries": [
     {
-      "name": "Java/Kotlin",
-      "experience": "2 year +",
-      "href": "https://kotlinlang.org/"
-    },
-    {
-      "name": "Typescript",
-      "experience": "2 year +",
-      "href": "https://www.typescriptlang.org/"
-    },
-    {
       "name": "Rust",
-      "experience": "1 year",
+      "experience": "Proficient",
       "href": "https://www.rust-lang.org/"
     },
     {
       "name": "Python",
-      "experience": "Common",
+      "experience": "Proficient",
       "href": "https://www.python.org/"
     },
     {
-      "name": "C/C++",
+      "name": "Typescript",
+      "experience": "Proficient (Rusty)",
+      "href": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Java/Kotlin",
+      "experience": "Proficient (Rusty)",
+      "href": "https://kotlinlang.org/"
+    },
+    {
+      "name": "C++",
       "experience": "Basics",
       "href": "https://www.iso.org/standard/74528.html"
     }

@@ -1,0 +1,10 @@
+{
+  "name": "Carbond",
+  "type": "OS Daemon",
+  "date": 1656169628185,
+  "topics": ["sustainability", "carbon", "Rust", "Linux", "daemon"],
+  "language": "Rust",
+  "description": "An operating-system daemon for carbon awareness",
+  "link": "https://gitlab.com/sustainable-computing-systems/carbond/",
+  "image": "carbond.svg"
+}

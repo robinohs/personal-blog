@@ -2,16 +2,6 @@
   "title": "Frameworks",
   "entries": [
     {
-      "name": "Spring",
-      "experience": "1 year +",
-      "href": "https://spring.io"
-    },
-    {
-      "name": "React/Next.js",
-      "experience": "1 year +",
-      "href": "https://reactjs.org/"
-    },
-    {
       "name": "Omnetpp",
       "experience": "Basics",
       "href": "https://omnetpp.org/"

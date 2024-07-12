@@ -2,6 +2,11 @@
   "title": "Tools",
   "entries": [
     {
+      "name": "Gitlab CI/CD",
+      "experience": "Proficient",
+      "href": "https://docs.gitlab.com/ee/ci/"
+    },
+    {
       "name": "Jira",
       "experience": "Basics",
       "href": "https://www.atlassian.com/software/jira"
@@ -10,16 +15,6 @@
       "name": "Confluence",
       "experience": "Basics",
       "href": "https://www.atlassian.com/software/confluence"
-    },
-    {
-      "name": "Continuous Integration",
-      "experience": "Basics",
-      "href": "https://www.jenkins.io/"
-    },
-    {
-      "name": "Prisma.io",
-      "experience": "Basics",
-      "href": "https://www.prisma.io/"
     }
   ]
 }
