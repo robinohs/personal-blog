@@ -22,7 +22,7 @@ const PublicationsSection = ({ publications }: Props) => {
               <SearchableList searchFilter={createSearch(["title", "authors"])} items={filterItems}>
                 {(searchFilterItems) => (
                   <PaginatedList sx={{ marginTop: "25px" }} itemsPerPage={500} items={searchFilterItems}>
-                    {(publication) => <PublicationCard publication={publication} />}
+                    {(publication) => <PublicationCard key={publication.title} publication={publication} />}
                   </PaginatedList>
                 )}
               </SearchableList>
