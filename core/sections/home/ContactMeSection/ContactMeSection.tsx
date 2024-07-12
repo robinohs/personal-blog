@@ -13,7 +13,7 @@ const ContactMeSection = () => {
           <SocialButton icon="bi bi-linkedin" name="Linkedin" href="https://www.linkedin.com/in/robin-ohs-b6b4051a1/?locale=en_US" />
           <SocialButton icon="bi bi-github" name="GitHub" href="https://github.com/robinohs" />
           <SocialButton icon="bi bi-instagram" name="Instagram" href="https://www.instagram.com/robin.ohs/" />
-          <SocialButton icon="bi bi-twitter" name="Twitter" href="https://twitter.com/roboh97" />
+          <SocialButton icon="bi bi-twitter-x" name="X (Twitter)" href="https://x.com/roboh97" />
           <SocialButton icon="bi bi-stack-overflow" name="StackOverflow" href="https://stackoverflow.com/users/15174092/roboh97" />
         </Box>
       </Section>
